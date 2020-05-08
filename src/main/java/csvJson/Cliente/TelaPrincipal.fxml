@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<fx:root prefHeight="800.0" prefWidth="650.0" type="AnchorPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="csvJson.Cliente.TelaController">
+   <children>
+      <Pane prefHeight="800.0" prefWidth="650.0">
+         <children>
+            <Button fx:id="btnAbrir" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#abrirArq" prefHeight="44.0" prefWidth="91.0" text="Abrir" />
+            <Button fx:id="btnSalvar" layoutX="14.0" layoutY="69.0" mnemonicParsing="false" onAction="#salvarArq" prefHeight="44.0" prefWidth="91.0" text="Salvar" />
+            <Button fx:id="btnConvert" layoutX="14.0" layoutY="127.0" mnemonicParsing="false" onAction="#convertArq" prefHeight="44.0" prefWidth="91.0" text="Converter" />
+            <ProgressBar fx:id="PgBLeitura" layoutX="14.0" layoutY="181.0" prefHeight="31.0" prefWidth="628.0" progress="0.0" />
+            <ProgressBar fx:id="PgBGravacao" layoutX="16.0" layoutY="257.0" prefHeight="31.0" prefWidth="628.0" progress="0.0" />
+            <TextField fx:id="txtPathAbrir" editable="false" layoutX="116.0" layoutY="21.0" prefHeight="31.0" prefWidth="525.0" />
+            <TextField fx:id="txtPathSalvar" editable="false" layoutX="116.0" layoutY="76.0" prefHeight="31.0" prefWidth="525.0" />
+            <TextArea fx:id="txtDados" editable="false" layoutX="16.0" layoutY="297.0" prefHeight="303.0" prefWidth="628.0" />
+            <TextArea fx:id="txtTempo" editable="false" layoutX="16.0" layoutY="654.0" prefHeight="139.0" prefWidth="628.0" />
+            <Label layoutX="16.0" layoutY="620.0" text="Tempos">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <ProgressBar fx:id="PgBConversao" layoutX="16.0" layoutY="220.0" prefHeight="31.0" prefWidth="628.0" progress="0.0" />
+         </children>
+      </Pane>
+   </children>
+</fx:root>
